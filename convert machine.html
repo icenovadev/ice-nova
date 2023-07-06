@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .f1{
+            background: #1c1c1c;
+            border: none;
+            width: 50%;
+            padding: 30px;
+            height: 290px;
+            margin-bottom: -90px;
+
+        }
+        p{
+            color: white;
+        }
+        SPAN{
+            font-size: 40px;
+        }
+        fieldset{
+            width: 610px;
+            height: 115px;
+            background: #fff;
+            border: none;
+            margin-top: -60px;
+            border-radius: 5px;
+           
+        }
+        button{
+            margin-right:0px;
+        }
+        h1{
+            font-size: 15px;
+            font-family: 'Poppins',sans-serif;
+        }
+        .first{
+            margin-right: 400px;
+
+        
+        }
+        .second{
+            margin-top: -80px;
+            margin-right: 70px;
+        }
+        .third{
+            margin-left: 300px;
+            margin-top: -80px;
+        }
+        select{
+            padding: 5px;
+            width: 130px;
+        }
+        #p{
+            margin-left: 50px;
+           margin-bottom: 60px;
+        }
+        h3{
+            margin-top: -60px;
+            font-family: 'Poppins',sans-serif;
+            font-size: 15px;
+        }
+        button{
+            padding: 10px;
+            background: #1c1c1c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: -400px;
+         
+        }
+        input[type="number"]{
+            padding: 5px;
+            width: 60px;
+            
+        }
+        input[type="text"]{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .res{
+            margin-left: 270px;
+            margin-top: -50px;
+        
+        }
+        input[type="text"]{
+            padding: 20px;
+        }
+      
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <form action="" name="form" onsubmit="return false">
+    <br><br>
+    <center>
+        <fieldset class="f1">
+        <p><SPAN>XYZ-COMPANY</SPAN></p>
+        <p>CURRANCY EXCHANGE PLATFORM</p>
+    </fieldset>
+    <fieldset>
+        <div class="first">
+            <h1>AMOUNT</h1>
+        <input id="amount" type="number">
+        
+        </div>
+        <div class="second">
+            <h1>FROM</h><br>
+                <br>
+                <select id="amountto">
+                    <option value="" >USA</option>
+                    <option value="" onclick="rw()" id="well">RWANDA</option>
+                    <option value="">EURO</option>
+                    <option value="">JAPAN</option>
+                    <option value="">UNITED KINGDOM</option>
+                    
+        
+                </select>
+        </div>
+       
+        <div class="third">
+            <h1>TO</h><br>
+                <br>
+                <select id="amountin">
+                    <option value="" id="well2">Rwanda - RWF</option>
+                    <option value="" id="toss">Usa - Dollar</option>
+                    <option value="">United Kingdom - Pound</option>
+                    <option value="">Japan - YEN</option>
+                    
+                    
+        
+                </select>
+        </div>
+       <br>
+        <button onclick="calculate()"   ondblclick="rw()" onmouseover="rwanda()">CONVERT</button>
+        <br>
+<div class="res">
+    <h1 id="result" >RESULT</h1>
+    <input   type="text "  id="result"  style="padding: 15px; border: none; font-size: 30px; width: 120px;">
+ 
+</div>    
+    </fieldset>
+    </center>
+   </form>
+
+    <script>
+
+    function calculate(){
+    amount=parseFloat((form.amount.value));
+       result=amount*1000;
+       (form.result.value)=result
+  }
+    function rwanda(){
+           
+
+        amount=parseFloat((form.amount.value));
+        result=amount/1000;
+        (form.result.value)=result
+    }
+    function pound(){
+        amount=parseFloat((form.amount.value));
+        result=amount*1200;
+        (form.result.value)=result
+    }
+    var well= document.getElementById("well")
+    var well= document.getElementById("well2")
+    function rw(){
+        if(well==well2){
+            alert("currency are the same")
+        }
+        else if(result.value==""){
+            result.innerHTML="The currency is the same";
+            
+        }
+    }
+
+ 
+    
+  
+   
+
+   
+  
+    </script>
+</body>
+</html>
