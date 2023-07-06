@@ -1,0 +1,64 @@
+#head
+{
+    background-color: greenyellow;
+    display: flex;
+    color: whitesmoke;
+   
+
+    
+}
+#link
+{
+color: white;
+float:right;
+display: flex;
+margin-top: -60px;
+padding: 12px;
+padding-right: 20px;
+background-color: greenyellow;
+
+}
+#content
+{
+    color: white;
+    background-image: transparent;
+   width: 1353px;
+   height: 500px;
+    background-image: url(doc.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: linear-gradient(hsla(0, 0%, 5%, 0.2),hsla(0, 0%, 5%, 0.2),url(kira.jpg));
+}
+#co
+{
+    float: botom;
+}
+span
+{
+    color: yellowgreen;
+}
+#img
+{
+    float: right;
+}
+#foter
+{
+    background-color: black;
+    color: white;
+}
+header
+{
+    background-color: black;
+    color: white;
+    top: 0px;
+    height: 300px;
+}
+body
+{
+    background-color: whitesmoke;
+}
+a
+{
+    color: aqua;
+    font-family: cursive;
+}
